@@ -54,15 +54,16 @@
                 <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="CQO-bP-OeU">
                     <connections>
                         <action selector="longPress:" destination="Bto-x3-Tx8" id="ljh-yk-CGg"/>
+                        <outlet property="delegate" destination="Bto-x3-Tx8" id="1Zf-jp-ta7"/>
                     </connections>
                 </pongPressGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="850.72463768115949" y="109.82142857142857"/>
+            <point key="canvasLocation" x="709" y="115"/>
         </scene>
         <!--Share An Experience! 🤰🏻-->
         <scene sceneID="Kut-t1-y4l">
             <objects>
-                <viewController id="cyR-Iw-5P8" customClass="ExperienceViewController" sceneMemberID="viewController">
+                <viewController id="cyR-Iw-5P8" customClass="ExperienceViewController" customModule="Experiences" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YQI-Ke-VOE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -174,7 +175,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="descriptionTF" destination="xWp-7J-V3X" id="6T6-lX-TYT"/>
+                        <outlet property="descriptionTF" destination="xWp-7J-V3X" id="HZu-l9-E0V"/>
                         <outlet property="tableView" destination="k9I-Sv-0Uq" id="3xx-Jw-011"/>
                         <outlet property="titleTF" destination="xas-oR-OkY" id="w0l-Wp-ylg"/>
                         <segue destination="8LI-px-ynN" kind="show" identifier="addAudioSegue" id="XAo-af-qrM"/>
@@ -192,12 +193,12 @@
         <!--Audio-->
         <scene sceneID="0V2-7e-PXF">
             <objects>
-                <viewController id="8LI-px-ynN" customClass="AudioViewController" sceneMemberID="viewController">
+                <viewController id="8LI-px-ynN" customClass="AudioViewController" customModule="Experiences" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vzR-rv-MrI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jl0-Ff-1wb">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jl0-Ff-1wb">
                                 <rect key="frame" x="170" y="655.5" width="74" height="71.5"/>
                                 <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Play" image="play.circle" catalog="system">
@@ -207,7 +208,7 @@
                                     <action selector="playTapped:" destination="8LI-px-ynN" eventType="touchUpInside" id="ii2-EZ-6g5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPa-Uv-fYJ">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPa-Uv-fYJ">
                                 <rect key="frame" x="170" y="530.5" width="74" height="71.5"/>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                 <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -229,7 +230,7 @@
                                 <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBK-GD-xxf">
-                                <rect key="frame" x="338" y="483.5" width="46" height="30"/>
+                                <rect key="frame" x="338" y="483.5" width="46" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -281,12 +282,12 @@
         <!--Video-->
         <scene sceneID="ccO-Pq-csY">
             <objects>
-                <viewController id="lv7-eL-NpF" customClass="VideoViewController" sceneMemberID="viewController">
+                <viewController id="lv7-eL-NpF" customClass="VideoViewController" customModule="Experiences" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sif-3D-EP9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cNL-eM-FlD" customClass="CameraPreviewView" customModule="Experiences_Sprint_Challenge" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cNL-eM-FlD" customClass="CameraPreviewView" customModule="Experiences" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAG-Jd-VjM">
@@ -339,7 +340,7 @@
         <!--Image-->
         <scene sceneID="Hiq-ac-LeF">
             <objects>
-                <viewController id="1jN-ra-S0F" customClass="ImageViewController" sceneMemberID="viewController">
+                <viewController id="1jN-ra-S0F" customClass="ImageViewController" customModule="Experiences" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nvn-cy-wBh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -421,13 +422,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VtK-Q5-90o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+            <point key="canvasLocation" x="-141" y="115"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="hQ1-xF-veW"/>
         <segue reference="c58-zD-gCB"/>
-        <segue reference="ytg-cR-Idf"/>
+        <segue reference="XAo-af-qrM"/>
         <segue reference="fFN-GA-CAT"/>
     </inferredMetricsTieBreakers>
     <resources>

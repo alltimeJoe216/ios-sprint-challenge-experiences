@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E771D1C24B8C884005D98F8 /* ExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E771D1B24B8C884005D98F8 /* ExperienceViewController.swift */; };
+		8E771D1E24B8C95B005D98F8 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E771D1D24B8C95B005D98F8 /* ContainerViewController.swift */; };
+		8E771D2024B8C96E005D98F8 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E771D1F24B8C96E005D98F8 /* VideoViewController.swift */; };
+		8E771D2224B8C992005D98F8 /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E771D2124B8C992005D98F8 /* AudioViewController.swift */; };
+		8E771D2424B8C999005D98F8 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E771D2324B8C999005D98F8 /* ImageViewController.swift */; };
+		8E771D2624B8CCDB005D98F8 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E771D2524B8CCDB005D98F8 /* Player.swift */; };
+		8E771D2824B8CCE1005D98F8 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E771D2724B8CCE1005D98F8 /* Recorder.swift */; };
+		8E771D2B24B8CE0A005D98F8 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E771D2A24B8CE0A005D98F8 /* CameraPreviewView.swift */; };
 		8EAA816824B8BC5D00E4238D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAA816724B8BC5D00E4238D /* AppDelegate.swift */; };
 		8EAA816A24B8BC5D00E4238D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAA816924B8BC5D00E4238D /* SceneDelegate.swift */; };
 		8EAA816C24B8BC5D00E4238D /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EAA816B24B8BC5D00E4238D /* MapViewController.swift */; };
@@ -41,6 +49,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E771D1B24B8C884005D98F8 /* ExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewController.swift; sourceTree = "<group>"; };
+		8E771D1D24B8C95B005D98F8 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		8E771D1F24B8C96E005D98F8 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		8E771D2124B8C992005D98F8 /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
+		8E771D2324B8C999005D98F8 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		8E771D2524B8CCDB005D98F8 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		8E771D2724B8CCE1005D98F8 /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
+		8E771D2A24B8CE0A005D98F8 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
 		8EAA816424B8BC5D00E4238D /* Experiences.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Experiences.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EAA816724B8BC5D00E4238D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EAA816924B8BC5D00E4238D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +104,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E771D2924B8CCE7005D98F8 /* Media Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8E771D2524B8CCDB005D98F8 /* Player.swift */,
+				8E771D2724B8CCE1005D98F8 /* Recorder.swift */,
+			);
+			path = "Media Controllers";
+			sourceTree = "<group>";
+		};
 		8EAA815B24B8BC5D00E4238D = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +145,7 @@
 				8EAA819E24B8BD7700E4238D /* CoreData */,
 				8EAA819C24B8BD0300E4238D /* Models */,
 				8EAA819B24B8BCF900E4238D /* Model Controllers */,
+				8E771D2924B8CCE7005D98F8 /* Media Controllers */,
 				8EAA819A24B8BCF100E4238D /* Helpers */,
 				8EAA819D24B8BD0900E4238D /* View Controllers */,
 			);
@@ -172,6 +198,12 @@
 			isa = PBXGroup;
 			children = (
 				8EAA816B24B8BC5D00E4238D /* MapViewController.swift */,
+				8E771D1B24B8C884005D98F8 /* ExperienceViewController.swift */,
+				8E771D1D24B8C95B005D98F8 /* ContainerViewController.swift */,
+				8E771D1F24B8C96E005D98F8 /* VideoViewController.swift */,
+				8E771D2124B8C992005D98F8 /* AudioViewController.swift */,
+				8E771D2324B8C999005D98F8 /* ImageViewController.swift */,
+				8E771D2A24B8CE0A005D98F8 /* CameraPreviewView.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -319,13 +351,21 @@
 			files = (
 				8EAA81A024B8BD8800E4238D /* CoreDataStack.swift in Sources */,
 				8EAA816C24B8BC5D00E4238D /* MapViewController.swift in Sources */,
+				8E771D2024B8C96E005D98F8 /* VideoViewController.swift in Sources */,
+				8E771D1C24B8C884005D98F8 /* ExperienceViewController.swift in Sources */,
+				8E771D1E24B8C95B005D98F8 /* ContainerViewController.swift in Sources */,
 				8EAA816824B8BC5D00E4238D /* AppDelegate.swift in Sources */,
 				8EAA81A824B8C3B600E4238D /* ExperienceController.swift in Sources */,
+				8E771D2B24B8CE0A005D98F8 /* CameraPreviewView.swift in Sources */,
 				8EAA81A424B8BDA500E4238D /* Experience.swift in Sources */,
 				8EAA816A24B8BC5D00E4238D /* SceneDelegate.swift in Sources */,
 				8EAA817224B8BC5D00E4238D /* Experiences.xcdatamodeld in Sources */,
+				8E771D2424B8C999005D98F8 /* ImageViewController.swift in Sources */,
 				8EAA81A624B8BDAE00E4238D /* Media.swift in Sources */,
 				8EAA81A224B8BD9D00E4238D /* Experience+Convenience.swift in Sources */,
+				8E771D2624B8CCDB005D98F8 /* Player.swift in Sources */,
+				8E771D2224B8C992005D98F8 /* AudioViewController.swift in Sources */,
+				8E771D2824B8CCE1005D98F8 /* Recorder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
