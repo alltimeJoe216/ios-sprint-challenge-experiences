@@ -55,7 +55,7 @@ class ExperienceViewController: UIViewController {
     
     // MARK: Actions
     @IBAction func addTapped(_ sender: Any) {
-        let alert = UIAlertController(title: "Add Media", message: "Picture? Video? Memo?", preferredStyle: .actionSheet)
+        let alert = UIAlertController(title: "Add Media", message: "Picture? Video? Memo?", preferredStyle: .alert)
         for type in MediaType.allCases {
             alert.addAction(UIAlertAction(title: type.rawValue, style: .default, handler: { (action) in
                 DispatchQueue.main.async {

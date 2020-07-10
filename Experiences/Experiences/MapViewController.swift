@@ -89,7 +89,7 @@ class MapViewController: UIViewController {
             
             let alert = UIAlertController(title: "Did You Have Some Fun Here?",
                                           message: "Drop a pin here and share your experience!",
-                                          preferredStyle: .actionSheet)
+                                          preferredStyle: .alert)
             
             let actionOK = UIAlertAction(title: "Yes", style: .default) { (_) in
                 
